@@ -48,6 +48,6 @@ resource "aws_docdb_cluster" "docdb" {
 
   tags       = merge(
     local.common_tags,
-    { Name = "${var.env}-docdb-cluster }
+    { Name = "${var.env}-docdb-cluster" }
   )
 }
