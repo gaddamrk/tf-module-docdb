@@ -22,7 +22,7 @@ resource "aws_security_group" "docdb" {
     cidr_blocks      = var.allow_cidr
 
   }
-
+name_prefix = ""
   egress {
     from_port        = 0
     to_port          = 0
